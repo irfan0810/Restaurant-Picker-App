@@ -1,0 +1,21 @@
+<table class="table">
+
+    <thead class="table-dark">
+        <tr>
+            <th>Session Id</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tempSessionRestaurants of sessionRestaurants">
+            <td class="align-middle">{{ tempSessionRestaurants.id}}</td>
+            <td class="align-middle">{{ tempSessionRestaurants.restaurantName}}</td>
+            <td class="align-middle">{{ tempSessionRestaurants.active ? 'Active' : 'Inactive'}}</td>
+            <td>delete button</td>
+        </tr>
+
+    </tbody>
+</table>

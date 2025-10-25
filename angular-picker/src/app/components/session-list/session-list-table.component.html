@@ -1,0 +1,23 @@
+<!-- <p *ngFor="let tempSessions of sessions">
+    {{ tempSessions.id }}: {{ tempSessions.name }}
+</p> -->
+
+<table class="table">
+
+    <thead class="table-dark">
+        <tr>
+            <th>Session Id</th>
+            <th>Name</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let tempSessions of sessions">
+            <td class="align-middle">{{ tempSessions.id}}</td>
+            <td class="align-middle">{{ tempSessions.name}}</td>
+            <td class="align-middle">{{ tempSessions.active ? 'Active' : 'Inactive' }}</td>
+        </tr>
+
+    </tbody>
+</table>
